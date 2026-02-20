@@ -65,7 +65,7 @@ main .bg-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('/assets/photo-1462899006636-339e08d1844e.avif'); 
+    background-image: url('../assets/bg-service.avif'); 
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
