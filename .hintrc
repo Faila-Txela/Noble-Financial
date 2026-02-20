@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "development"
+  ]
+}
+
+// O .hintrc é um arquivo de configuração para o Webhint uma ferramenta de linting e análise estática voltada para o desenvolvimento web. 
+
+// Ele permite definir regras, dicas (hints) e comportamentos para validar acessibilidade, desempenho, compatibilidade entre navegadores e segurança do código-fonte. 

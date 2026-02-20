@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a Financial simple website - just to add to my portfolio project - Relearning about pure Css - Learning about the use of clamp">
+    <meta name="keywords" content="Financial; Book: Services; Noble">
+    <meta name="author" content="Faila Sauimbo">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">   
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../main-base.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Clone Template from Figma - Noble Financial</title>
+</head>
+<body>
+
+    <!-- Header -->
+     <header>
+        <div class="logo">
+            <p>noble financial</p>
+        </div>
+
+        <nav class="links">
+            <ul>
+                <li><a href="/pages/services.html" target="_blank" rel="noopener noreferrer">Services</a></li>
+            </ul>
+             <div class="btn-container">
+              <button type="button" title="button" class="btn" onclick="Book()">Book an appointment</button>
+             </div>
+        </nav>
+     </header>
+
+    <!-- Main -->
+     <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="content">
+                <h1 data-aos="fade-up">
+                    Financial Clarity <br> You Can Trust
+                </h1>
+                <p data-aos="fade-up" data-aos-duration="800">
+                    Trusted financial guidance for every stage of life and business since 1987
+                </p> 
+
+                <div class="btn-container" data-aos="fade-up" data-aos-duration="900">
+                 <button type="button" title="button" class="btn" onclick="Book()">Connect with our experts</button>
+                </div>
+            </div>
+
+            <div class="image" data-aos="fade-up" data-aos-duration="900">
+                <img src="/assets/back.png" alt="hero-image" loading="lazy">
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section class="services">
+            <div class="intro-content" data-aos="fade-up">
+                <p class="bold" data-aos="fade-up" data-aos-duration="800">
+                    Service
+                </p>
+                <strong data-aos="fade-up" data-aos-duration="900">
+                    Let us handle the numbers, 
+                    <br> so you can handle your success.
+                </strong>
+
+                <p data-aos="fade-up" data-aos-duration="1000">
+                    Serving individuals and small businesses since 1987
+                </p>
+                
+                <div class="btn-container" data-aos="fade-up" data-aos-duration="900">
+                 <button type="button" title="button" class="btn">Schedule a call</button>
+                </div>
+            </div>
+
+            <!-- Services - Cards -->
+            <div class="cards">
+
+                <!-- Card 1 -->
+                <div class="card" data-aos="fade-up">
+
+                    <div class="image-card">
+                        <img src="/assets/phone.png" alt="phone-image" loading="lazy">
+                    </div>
+
+                    <div class="content-card">
+                      <div class="text" data-aos="fade-up" data-aos-duration="700">
+                        <h3>
+                          Tax Preparation & 
+                          <br> Filing
+                        </h3>
+
+                        <p>
+                          Accurately prepare and file personal and business tax returns to maximize deductions and ensure compliance.
+                        </p>
+                      </div>
+
+                      <div class="numbers" data-aos="fade-up">
+                        <span data-aos="fade-up" data-aos-duration="800">1099 taxes</span> 
+                        <span data-aos-duration="700">Dependents</span> 
+                        <span data-aos="fade-up" data-aos-duration="800">Trust taxes</span>
+                      </div>
+                    </div>
+
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card" data-aos="fade-up">
+                    <div class="image-card">
+                        <img src="/assets/graphics.png" alt="graphics-image" loading="lazy">
+                    </div>
+
+                    <div class="content-card">
+                      <div class="text" data-aos="fade-up" data-aos-duration="700">
+                        <h3>
+                            IRS Audit Assistance
+                        </h3>
+                        <p>
+                            Offer expert guidance and representation to resolve tax audits and disputes with confidence.
+                        </p>
+                      </div>
+
+                        <div class="numbers" data-aos="fade-up">
+                         <span data-aos="fade-up" data-aos-duration="800">1099 taxes</span> 
+                         <span data-aos-duration="700">Dependents</span> 
+                         <span data-aos="fade-up" data-aos-duration="800">Trust taxes</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card" data-aos="fade-up">
+                    <div class="image-card">
+                        <img src="/assets/cofre.png" alt="cofre-image" loading="lazy">
+                    </div>
+
+                    <div class="content-card">
+                        <div class="text" data-aos="fade-up" data-aos-duration="700">
+                          <h3>
+                            Bookkeeping & Accounting
+                          </h3>
+
+                          <p>
+                            Maintain organized financial records and provide clear reports to support business growth and financial health.
+                          </p>
+                        </div>
+
+                        <div class="numbers" data-aos="fade-up">
+                         <span data-aos="fade-up" data-aos-duration="800">1099 taxes</span> 
+                         <span data-aos-duration="700">Dependents</span> 
+                         <span data-aos="fade-up" data-aos-duration="800">Trust taxes</span>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials">
+            <div class="text-heading" data-aos="fade-up" data-aos-duration="700">
+                <h2>
+                    Hear from our happy clients 
+                </h2>
+            </div>
+
+         <div class="quotes">
+
+            <div class="parts">
+                <div class="part-card active" data-aos="fade-up" data-aos-duration="800">
+                    <p><strong>Graphic Designer</strong></p>
+                    <p>Ontario, Canada</p>
+                </div>
+
+                <div class="part-card" data-aos="fade-up" data-aos-duration="700">
+                    <p><strong>Commercial Photographer</strong></p>
+                    <p>Ontario, Canada</p>
+                </div>
+
+                <div class="part-card" data-aos="fade-up" data-aos-duration="800">
+                    <p><strong>Stylist</strong></p>
+                    <p>Austin, Texas</p>
+                </div>
+            </div>
+
+             <hr>
+
+            <div class="text-avatar">
+                <q class="quote" data-aos="fade-up" data-aos-duration="700">
+                    Managing my taxes as a freelancer used to be overwhelming, but Noble Finance made it effortless.
+                </q>
+
+                <div class="avatar-info" data-aos="fade-up" data-aos-duration="800">
+                    <img src="https://plus.unsplash.com/premium_photo-1689977927774-401b12d137d6?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Zm90byUyMGRvcyUyMGhvbWVuc3xlbnwwfHwwfHx8MA%3D%3D" loading="lazy" alt="Taylor">
+                    <span>Taylor M., 28 years old</span>
+                </div>
+            </div>
+
+         </div>
+        </section>
+
+        <!-- Bg image -->
+        <section class="bg-image">
+            <div class="overlay" loading="lazy"></div>
+        </section>
+
+
+        <!-- Benefits -->
+        <section class="benefits">
+           <div class="part-1">
+            <h2 data-aos="fade-up" data-aos-duration="800">
+                Smart Finance for everyone
+            </h2>
+            <p data-aos="fade-up" data-aos-duration="700">
+                At Noble Finance, we believe that financial confidence should be accessible to everyone—whether you’re a solo entrepreneur, managing a growing family, or running a small business.
+            </p>
+           </div>
+
+           <div class="part-2">
+            <hr>
+            <div class="content1" data-aos="fade-up" data-aos-duration="600">
+                <i class="bi bi-folder2"></i>
+                <h3>
+                    For Freelancers
+                </h3>
+                <p>
+                    Simplicity & Control
+                </p>
+                <p>
+                    Stay in charge of your income with seamless expense tracking, automated deductions, and smart tax strategies—so you can focus on doing what you love.
+                </p>
+            </div>
+             <hr>
+
+            <div class="content1" data-aos="fade-up" data-aos-duration="700">
+                <i class="bi bi-people"></i>
+                <h3>
+                    For Families
+                </h3>
+                <p>
+                    Stability & Security
+                </p>
+                <p>
+                    From budgeting tools to tax-saving insights, we help you plan for the future, maximize refunds, and keep your household finances running smoothly.
+                </p>
+            </div>
+             <hr>
+            
+            <div class="content1" data-aos="fade-up" data-aos-duration="800">
+                <i class="bi bi-calculator"></i>
+                <h3>
+                    For Small Businesses
+                </h3>
+                <p>
+                    Stability & Security
+                </p>
+                <p>
+                    Effortless bookkeeping, payroll solutions, and expert-backed tax support—so you can spend less time on finances and more time scaling your business.
+                </p>
+            </div>
+
+           </div>
+        </section>
+
+        
+        <!-- Call to action -->
+        <section class="call-to-action">
+
+            <div class="cta-1" data-aos="fade-up" data-aos-duration="900">
+                <p data-aos="fade-up" data-aos-duration="900">
+                    <strong>A custom built plan for you</strong>
+                </p>
+
+                <p data-aos="fade-up" data-aos-duration="800">
+                    At Noble Finances, we believe that tax filing should be seamless, accurate, and stress-free. Our approach is centered on three key pillars: simplicity, accuracy, and security.
+                </p>
+
+                <div class="btn-container" data-aos="fade-up" data-aos-duration="900">
+                 <button type="button" title="button" class="btn">Learn more</button>
+                </div>
+
+            </div>
+
+            <div class="cta-2" data-aos="fade-up" data-aos-duration="800">
+                <img src="/assets/blocks.png" alt="blocks-image" loading="lazy">
+            </div>
+
+        </section>
+
+
+        <!-- Experts -->
+        <section class="experts">
+
+            <div class="content" data-aos="fade-up" data-aos-duration="700">
+                <p>
+                    We believe that tax filing should be seamless, accurate, and stress-free. Get started with Noble Finance today!
+                </p>
+            </div>
+
+            <div class="btn-container" data-aos="fade-up" data-aos-duration="900">
+              <button type="button" title="button" class="btn">Connect with our experts</button>
+            </div>
+
+        </section>
+
+     </main>
+
+
+    <!-- Footer -->
+         <footer class="main-footer">
+            <div class="footer-row top-row" data-aos="fade-up">
+                <a href="/index.html" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-duration="800" class="footer-logo">Noble Finances</a>
+                
+                <div class="footer-actions" data-aos="fade-up" data-aos-duration="800">
+                    <a href="/pages/services.html" target="_blank" rel="noopener noreferrer">Services</a>
+                    <button class="btn-appointment" data-aos="fade-up" data-aos-duration="900" onclick="Book()">Connect with our experts</button>
+                </div>
+            </div>
+
+            <div class="footer-row bottom-row">
+                <div class="footer-description">
+                    <p>Financial Clarity You Can Trust</p>
+                    <p>Trusted financial guidance for every stage of life and business since 1987</p>
+                </div>
+                <p class="copyright">© 2025 All Rights Reserved</p>
+            </div>
+    </footer>
+
+
+   <script>
+    AOS.init();
+
+    function Book() {
+      window.location.href = "pages/book.html"
+    }
+   </script>
+
+</body>
+</html>

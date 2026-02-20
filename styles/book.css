@@ -1,0 +1,94 @@
+/* Main */
+main .hero-section{
+    min-height: 100vh; 
+    padding: 40px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-cards);
+    gap: 12%;
+    flex-wrap: wrap;
+}
+
+main .hero-section .content{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px; 
+    gap: 6px;
+    padding: 12px;
+    flex: 1.6; 
+}
+
+main .hero-section .content h1{
+    color: var(--text-color-main);
+    margin-bottom: 20px;
+    line-height: 1.1;
+    text-align: left;
+    font-size: var(--fs-hero);
+}
+
+main .hero-section .content p{
+    color: var(--text-color-main);
+    text-align: left;
+}
+
+main .hero-section .content .btn-container{
+    margin-top: 16px;
+    width: 100%;
+}
+
+main .hero-section .btn-container button{
+    padding: 15px 30px;
+    text-transform: capitalize;
+    color: var(--text-color-button);
+    background-color: var(--text-color-main);
+}
+
+main .hero-section .btn-container button:hover{
+    background-color: var(--text-color-main-hover);
+}
+
+main .hero-section .image{
+    flex: 1.8;
+    border-radius: var(--radius-md);
+    background-color: var(--section-hero);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px; 
+    max-height: 600px; 
+}
+
+main .hero-section .image img{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 768px) {
+    main .hero-section {
+        flex-direction: column;
+        gap: var(--space-lg);
+        padding-top: 80px;
+    }
+
+    main .hero-section .content {
+        flex: none; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    main .hero-section .content h1,
+    main .hero-section .content p {
+        text-align: center;
+    }
+
+    main .hero-section .image {
+        flex: none;
+        width: 100%;
+        aspect-ratio: 1 / 1; 
+        max-width: 320px; 
+    }
+}

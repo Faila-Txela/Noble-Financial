@@ -1,0 +1,521 @@
+/* Main */
+main .hero-section{
+    min-height: 100vh; 
+    background-color: var(--section-hero);
+    padding: 40px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin: 0 0 30px 0;  /*top/right/bottom/left*/
+}
+
+main .hero-section .content{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0;
+    gap: 6px;
+    flex: 1.6; /*Tem uma proporção menor em relação a imagem*/
+}
+
+main .hero-section .content h1{
+    font-size: var(--fs-hero);
+    color: var(--text-color-main);
+    margin-bottom: 20px;
+    line-height: 1.1;
+    text-align: left;
+}
+
+main .hero-section .content p{
+    color: var(--text-color-main);
+    text-align: left;
+}
+
+main .hero-section .content .btn-container{
+    margin-top: 8px;
+    width: 100%;
+}
+
+main .hero-section .btn-container button{
+    padding: 15px 25px;
+    color: var(--text-color-button);
+    background-color: var(--text-color-main);
+}
+
+main .hero-section .btn-container button:hover{
+    background-color: var(--text-color-main-hover);
+}
+
+main .hero-section .image{
+    max-width: 100%;
+    flex: 1.8;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px; /* Ajuda na renderização de rotações */
+}
+
+main .hero-section .image img{
+    animation: rotate 20s linear infinite;
+    transform-origin: center;
+}
+
+main .services{
+    min-height: 100vh; 
+    padding: 0 5%;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 10px 0;
+}
+
+main .services .intro-content{
+    text-align: center;
+}
+
+main .services .intro-content p{
+    color: var(--text-color-main);
+    font-size: var(--fs-sm);
+    margin-bottom: 20px;
+}
+
+main .services .intro-content .bold{
+    font-weight: 600;
+    color: var(--text-color-main);
+}
+
+main .services .intro-content strong{
+    font-size: var(--fs-xl);
+    color: var(--text-color-main);
+}
+
+main .services .btn-container{
+    width: 100%;
+}
+
+main .services .btn-container button{
+    padding: 15px 25px;
+    color: var(--text-color-button);
+    background-color: var(--text-color-main);
+}
+
+main .services .btn-container button:hover{
+    background-color: var(--text-color-main-hover);
+}
+
+/* Main Cards */
+.cards{
+    margin-top: 4%;
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    align-items: flex-start;
+    margin: 6% auto 0;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cards .card{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 700px;
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    background-color: var(--color-cards);
+    width: fit-content;  
+}
+
+.services .cards .card .content-card{
+    max-width: 600px;
+}
+
+.services .cards .card .content-card .text{
+    margin-bottom: 6%;
+    line-height: 1.6;
+}
+
+.services .cards .card:nth-child(2){
+    flex-direction: row-reverse;
+    align-self: flex-end;
+}
+
+.services .cards .numbers{
+    display: flex;
+    gap: 15px;
+}
+
+.services .cards .numbers span{
+    background-color: var(--text-white);
+    color: var(--text-span-color);
+    padding: var(--space-xs);
+    white-space: nowrap;
+    border-radius: var(--radius-sm);
+    font-size: var(--fs-sm);
+    font-weight: 500;
+}
+
+.services .cards .card .image-card{
+    width: 240px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.services .cards .card img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    image-rendering: auto;
+}
+
+
+/* Testimonials */
+main .testimonials{
+    min-height: 100vh; 
+    padding: 40px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    margin: 0 0 10px 0;
+}
+
+main .testimonials h2{
+    font-size: var(--fs-xl);
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    color: var(--text-color-main);
+}
+
+.quotes {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4%;
+}
+
+.parts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.part-card {
+    padding: 20px;
+    border: none;
+    border-top: 1px solid var(--text-color-main);
+    color: var(--text-span-color);
+    width: 25dvb;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.part-card.active {
+    background-color: var(--text-color-main);
+    color: var(--text-white);
+}
+
+.text-avatar {
+    max-width: 500px;
+}
+
+.text-avatar .quote {
+    font-size: var(--fs-lg);
+    color: var(--text-color-main);
+    margin-bottom: 20px;
+}
+
+.text-avatar .avatar-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--text-color-main);
+    margin-top: 40px;
+}
+
+.text-avatar .avatar-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    object-fit: cover;
+}
+
+/* Bg Image */
+
+main .bg-image {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/photo-1515378791036-0648a3ef77b2.avif'); 
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    overflow: hidden;
+    margin: 0 0 10px 0;
+}
+
+main .bg-image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--overlay-color);
+    z-index: 1; 
+}
+
+/* Benefits */
+main .benefits{
+    min-height: 100vh;
+    padding: 40px 8%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 0 0 10px 0;
+}
+
+main .benefits i{
+    font-size: var(--fs-xl);
+    color: var(--text-color-main);
+}
+
+main .benefits .part-1{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+main .benefits .part-1 h2{
+    max-width: 400px;
+    font-size: var(--fs-xl);
+    font-weight: 600;
+    color: var(--text-color-main);
+}
+
+main .benefits .part-1 p{
+    max-width: 600px;
+    color: var(--text-color-main);
+}
+
+main .benefits .part-2{
+    display: flex;
+    gap: 20px;
+    color: var(--text-color-main);
+}
+
+main .benefits .part-2 .content1{
+    gap: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .benefits .part-2 .content1 p{
+    max-width: 400px;
+}
+
+
+/* CTA */
+main .call-to-action{
+    min-height: 80vh;
+    padding: 40px 8%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 0 10px 0;
+}
+
+main .call-to-action .cta-1{
+    background-color: var(--text-color-main);
+    max-width: 800px;
+    width: 100%;
+    flex: 1;
+    border-radius: 6px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    color: var(--text-color-button);
+}
+
+main .call-to-action .cta-1 p strong{
+    font-size: var(--fs-lg);
+    text-transform: capitalize;
+    word-spacing: 2px;
+}
+
+main .call-to-action .cta-1 .btn-container{
+    width: 100%;
+}
+
+main .call-to-action .cta-1 .btn-container button{
+    padding: 12px 20px;
+    color: var(--text-color-main);
+    background-color: var(--text-white);
+}
+
+main .call-to-action .cta-1 .btn-container button:hover{
+    background-color: var(--section-hero);
+}
+
+
+main .call-to-action .cta-2{
+    background-color: var(--section-hero);
+    flex: 1;
+    object-fit: contain;
+    max-width: 800px;
+    border-radius: 6px;
+}
+main .call-to-action .cta-2 img{
+    height: auto;
+}
+
+
+/* Experts */
+main .experts{
+    min-height: 60vh;
+    padding: 40px 8%;
+    gap: 30px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--experts-section);
+}
+
+main .experts .content {
+    max-width: 600px;
+}
+main .experts .content p{
+    font-size: var(--fs-lg);
+    font-weight: 600;
+    text-align: center;
+    color: var(--text-color-main);
+}
+
+main .experts .btn-container button{
+    padding: 15px 40px;
+    color: var(--text-color-button);
+    background-color: var(--text-color-main);
+}
+
+main .experts .btn-container button:hover{
+    background-color: var(--text-color-main-hover);
+}
+
+
+@media (max-width: 768px) {
+    main .hero-section{
+        flex-direction: column-reverse;
+    }
+    /* Cards */
+    main .services .card3{
+        margin-left: 0;
+    }
+    .cards {
+        align-items: center;
+    }
+
+    .services .cards .card:nth-child(2) {
+        align-self: center; 
+        flex-direction: column;
+    }
+
+    .cards .card {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;    
+        width: 100%;           
+    }
+
+    .services .cards .numbers {
+        justify-content: center;
+        flex-wrap: wrap;       
+    }
+
+    /* Testimonials */
+    .testimonials{
+        background-color: var(--experts-section);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: var(--radius-md);
+        text-align: center;
+    }
+
+    .testimonials .quotes{
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+    }
+
+    .testimonials .parts{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 300px;
+        padding: 12px;
+    }
+
+    .testimonials hr{
+        display: none;
+    }
+
+     /* Benefits */
+     .benefits .part-1{
+        display: flex;
+        flex-direction: column;
+     }
+
+    .benefits .part-2{
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+    }
+
+    .benefits .part-2 hr{
+        display: block;
+        border: none;
+        width: 100%;
+        height: 1px;
+        margin: 10px 0;
+        border-top: 1px solid #e0e0e0;
+    }
+
+    /* CTA */
+    .call-to-action{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .call-to-action .cta-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* Animation */
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

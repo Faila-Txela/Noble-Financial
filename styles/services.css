@@ -1,0 +1,299 @@
+/* Hero Section */
+main .hero-section{
+    min-height: 100vh; 
+    padding: 40px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+main .hero-section .content{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0;
+    gap: 6px;
+    padding: 12px;
+    flex: 1.6;
+}
+
+main .hero-section .content h1{
+    font-size: var(--fs-hero);
+    color: var(--text-color-main);
+    margin-bottom: 20px;
+    line-height: 1.1;
+    max-width: 600px;
+}
+
+main .hero-section .content p{
+    color: var(--text-color-main);
+}
+
+main .hero-section .content .btn-container{
+    margin-top: 16px;
+    width: 100%;
+}
+
+main .hero-section .btn-container button{
+    padding: 15px 25px;
+    color: var(--text-color-button);
+    background-color: var(--text-color-main);
+}
+
+main .hero-section .btn-container button:hover{
+    background-color: var(--text-color-main-hover);
+}
+
+main .hero-section .image{
+    max-width: 800px;
+    object-fit: contain;
+    flex: 1.8;
+}
+main .hero-section .image img{
+    width: 100%;
+    height: auto;
+}
+
+
+/* Bg Image */
+main .bg-image {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/photo-1462899006636-339e08d1844e.avif'); 
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    border-radius: 0px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+main .bg-image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--overlay-color);
+    z-index: 1; 
+}
+
+/* How it works */
+main .works{
+    min-height: 100vh;
+    padding: 0 5%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+main .works .intro{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color-main);
+    line-height: 30px;
+    text-align: left;
+}
+main .works .intro h2{
+    font-size: var(--fs-xl);
+}  
+
+main .works .content-steps{
+    gap: 30px;
+    margin-top: 40px;
+    display: flex;
+    align-items: stretch;   /*Assim todos terão a mesma altura*/
+    flex-direction: column;
+    padding: 12px;
+}
+
+main .works .content-steps .step{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+    padding: 12px;
+}
+
+main .works .content-steps .step .number{
+    font-size: var(--fs-xl);
+    color: var(--text-span-color);
+}
+
+main .works .content-steps .step .text-step{
+    color: var(--text-color-main);
+    line-height: 1.4;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main .works .content-steps .step .text-step h3{
+    font-size: var(--fs-lg);
+}
+
+main .works .content-steps .step .image{
+    width: clamp(160px, 10vw, 260px);
+    height: auto;
+    aspect-ratio: 20 / 20;
+    background-color: var(--steps-image-bg);
+    border-radius: var(--radius-sm);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+} 
+
+main .works .content-steps .step img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    image-rendering: auto;
+}
+
+
+/* Philosophy */
+.philosophy{
+    min-height: 100vh;
+    padding: 40px 5%;
+    gap: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: var(--text-color-main);
+    margin-top: 8%;
+    border: none;
+    border-top: 2px solid var(--steps-image-bg);
+}
+
+.philosophy .text-philosophy{
+    margin-bottom: 20px;
+}
+
+.philosophy .text-philosophy h2{
+    font-size: var(--fs-md);
+}
+
+.philosophy .text-philosophy h3{
+    font-size: var(--fs-xl);
+}
+
+.philosophy .cards-philosophy{
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.philosophy .cards-philosophy .card{
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    background-color: var(--color-cards);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.philosophy .cards-philosophy strong{
+    text-align: center;
+    font-size: var(--fs-lg);
+}
+
+/* CTA */
+main .call-to-action{
+    min-height: 100vh;
+    padding: 40px 5%;
+    background-color: var(--steps-image-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+main .call-to-action .text{
+    gap: 20px;
+    display: flex;
+    max-width: 400px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 16px;
+}
+
+main .call-to-action .text .btn-container{
+    width: 100%;
+}
+main .call-to-action .text .btn-container button{
+    padding: 15px 25px;
+    color: var(--text-color-button);
+    border-radius: var(--radius-lg);
+    background-color: var(--text-color-main);
+}
+main .call-to-action .text .btn-container button:hover{
+    background-color: var(--text-color-main-hover);
+}
+
+main .call-to-action .text p{
+    font-size: var(--fs-xl);
+    color: var(--text-color-main);
+}
+
+main .call-to-action .image{
+    width: clamp(280px, 50vw, 360px);
+    height: auto;
+    border-radius: var(--radius-md);
+    background-color: var(--color-cards);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+main .call-to-action .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    image-rendering: auto;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+    main .hero-section{
+        flex-direction: column-reverse;
+    }
+    .call-to-action{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .call-to-action .cta-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .works .content-steps{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .works .content-steps .step{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
