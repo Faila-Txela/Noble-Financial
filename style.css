@@ -256,7 +256,7 @@ main .bg-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('assets/photo-1515378791036-0648a3ef77b2.avif'); 
+    background-image: url('./assets/bg-hero.avif'); 
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
